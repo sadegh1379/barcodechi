@@ -8,7 +8,6 @@ interface MobileLayoutProps {
 const MobileLayout: FC<MobileLayoutProps> = ({children}) => {
     return (
         <MobileLayoutContainer>
-            <p>mobile layout</p>
             {children}
         </MobileLayoutContainer>
     );

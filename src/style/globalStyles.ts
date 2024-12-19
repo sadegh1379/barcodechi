@@ -87,6 +87,10 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 50px;
   }
 
+  /* customize */
+  .pointer{
+    cursor: pointer;
+  }
  
 
   /* css animations */
