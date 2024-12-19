@@ -17,11 +17,6 @@ export const Modal: FC<IModalProps> = ({
     <BModal
       size={size}
       aria-labelledby="contained-modal-title-vcenter"
-      style={
-        {
-          // backgroundColor: "rgba(255, 255, 255, 0.8)",
-        }
-      }
       centered
       show={isOpen}
       onHide={onClose}

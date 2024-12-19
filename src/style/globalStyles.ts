@@ -7,8 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     font-family: sans-serif;
     scroll-behavior: smooth;
     line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
   }
 
   *,
@@ -22,16 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     color: #104c82;
   }
 
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    padding: 0;
-  }
+  
 
   body {
     margin: 0;
