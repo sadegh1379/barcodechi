@@ -10,7 +10,7 @@ export const TableContainer = styled.div`
 
     .thead_th {
       padding: 13px 24px 12px 24px;
-      background-color: ${(props) => props.theme.colors.background.infoLight};
+      background-color: ${(props) => props.theme.colors.success};
       color: #ffffff;
       white-space: nowrap;
       text-align: left;
@@ -32,17 +32,17 @@ export const TableContainer = styled.div`
       line-height: 17px;
       padding: 8px 0;
       white-space: nowrap;
-      border-bottom: 1px solid ${(props) => props.theme.colors.border.primary};
-      background-color: ${(props) => props.theme.colors.background.primary};
-      color: ${(props) => props.theme.colors.text.primary};
+      border-bottom: 1px solid ${(props) => props.theme.colors.border};
+      background-color: ${(props) => props.theme.colors.primary};
+      color: ${(props) => props.theme.colors.primary};
       text-align: center;
       display: table-cell;
       vertical-align: middle;
     }
     .tbody_tr:nth-child(even) {
       td {
-        background-color: ${(props) => props.theme.colors.background.secondary};
-        color: ${(props) => props.theme.colors.text.primary};
+        background-color: ${(props) => props.theme.colors.secondary};
+        color: ${(props) => props.theme.colors.primary};
       }
     }
     .tbody_tr.row_highlight td {
@@ -65,21 +65,21 @@ export const TableContainer = styled.div`
     text-align: center;
     padding: 50px 0;
     width: 100%;
-    background-color: ${(props) => props.theme.colors.background.primary};
-    color: ${(props) => props.theme.colors.text.primary};
+    background-color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
 
   .loading_container {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    background-color: ${(props) => props.theme.colors.background.primary};
-    color: ${(props) => props.theme.colors.text.primary};
+    background-color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
 
   .not_found_text {
     margin-top: 10px;
-    color: ${(props) => props.theme.colors.text.secondary};
+    color: ${(props) => props.theme.colors.secondary};
     font-size: 12px;
     font-weight: 500;
 

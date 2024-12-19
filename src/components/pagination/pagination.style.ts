@@ -12,8 +12,8 @@ export const PaginationContainer = styled.div`
     margin-bottom: -3px;
     padding-top: 4px;
     background-color: #e1e3e5;
-    color: ${(props) => props.theme.colors.text.primary};
-    background-color: ${(props) => props.theme.colors.background.gray};
+    color: ${(props) => props.theme.colors.primary};
+    background-color: ${(props) => props.theme.colors.gray};
     &:focus {
       outline: none;
     }
@@ -33,12 +33,12 @@ export const PaginationContainer = styled.div`
   .arrow {
     font-size: 24px;
     cursor: pointer;
-    background-color: ${(props) => props.theme.colors.background.primary};
+    background-color: ${(props) => props.theme.colors.primary};
   }
   .text {
     font-size: 18px;
     margin-bottom: -3px;
-    color: ${(props) => props.theme.colors.text.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
   @media (max-width: 768px) {
     .text {

@@ -12,8 +12,8 @@ export const ButtonContainer = styled.button`
   .dot {
     background-color: ${(props) =>
       props.theme.mode === "light"
-        ? props.theme.colors.text.primaryReverse
-        : props.theme.colors.text.primary} !important;
+        ? props.theme.colors.primaryReverse
+        : props.theme.colors.primary} !important;
   }
 
   &.small {
@@ -31,64 +31,22 @@ export const ButtonContainer = styled.button`
     padding-top: 12px;
   }
 
-  &.error {
-    background-color: ${(props) => props.theme.colors.background.errorLight};
-    border-color: ${(props) => props.theme.colors.background.errorLight};
-
-    &:hover {
-      background-color: ${(props) => props.theme.colors.background.errorDark};
-      border-color: ${(props) => props.theme.colors.background.errorDark};
-    }
-
-    &.outlined {
-      background-color: ${(props) => props.theme.colors.background.primary};
-      color: ${(props) => props.theme.colors.text.errorLight};
-    }
-  }
-
-  &.info {
-    background-color: ${(props) => props.theme.colors.background.infoLight};
-    border-color: ${(props) => props.theme.colors.background.infoLight};
-
-    &:hover {
-      background-color: ${(props) => props.theme.colors.background.infoDark};
-      border-color: ${(props) => props.theme.colors.background.infoDark};
-    }
-    &.outlined {
-      background-color: ${(props) => props.theme.colors.background.primary};
-      color: ${(props) => props.theme.colors.text.primary};
-    }
-  }
 
   &.success {
-    background-color: ${(props) => props.theme.colors.background.successLight};
-    border-color: ${(props) => props.theme.colors.background.successLight};
+    background-color: ${(props) => props.theme.colors.success};
+    border-color: ${(props) => props.theme.colors.success};
 
     &:hover {
-      background-color: ${(props) => props.theme.colors.background.successDark};
-      border-color: ${(props) => props.theme.colors.background.successDark};
+      background-color: ${(props) => props.theme.colors.success};
+      border-color: ${(props) => props.theme.colors.success};
     }
 
     &.outlined {
-      background-color: ${(props) => props.theme.colors.background.primary};
-      color: ${(props) => props.theme.colors.text.successLight};
+      background-color: ${(props) => props.theme.colors.primary};
+      color: ${(props) => props.theme.colors.success};
     }
   }
 
-  &.warning {
-    background-color: ${(props) => props.theme.colors.background.warningLight};
-    border-color: ${(props) => props.theme.colors.background.warningLight};
-
-    &:hover {
-      background-color: ${(props) => props.theme.colors.background.warningDark};
-      border-color: ${(props) => props.theme.colors.background.warningDark};
-    }
-
-    &.outlined {
-      background-color: ${(props) => props.theme.colors.background.primary};
-      color: ${(props) => props.theme.colors.text.warningLight};
-    }
-  }
 
   &:hover {
     cursor: pointer;

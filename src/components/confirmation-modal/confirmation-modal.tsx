@@ -31,7 +31,7 @@ export const ConfirmationModal: FC<IConfirmationModalProps> = ({
       <div>
         <div className="d-flex flex-column gap-2 justify-content-center align-items-center mt-2 text-center">
           <CiWarning
-            style={{ color: colors.background.warningLight }}
+            style={{ color: colors.success }}
             size={100}
           />
           <p style={{ fontSize: 16 }}>{title}</p>

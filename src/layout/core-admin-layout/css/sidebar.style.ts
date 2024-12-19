@@ -10,7 +10,7 @@ export const SidebarContainer = styled.aside`
     top: 0;
     overflow: auto;
     height: calc(100vh);
-    background-color: ${({ theme }) => theme.colors.background.infoLight};
+    background-color: ${({ theme }) => theme.colors.success};
 
     .link_item {
       padding: 12px 20px;
@@ -34,11 +34,11 @@ export const SidebarContainer = styled.aside`
       }
 
       &.active {
-        background-color: ${({ theme }) => theme.colors.background.primary};
+        background-color: ${({ theme }) => theme.colors.primary};
         color: ${({ theme }) =>
           theme.mode === "light"
-            ? theme.colors.text.infoLight
-            : theme.colors.text.primary};
+            ? theme.colors.success
+            : theme.colors.primary};
         border-radius: 0 35px 35px 0;
 
         &::before {
@@ -50,7 +50,7 @@ export const SidebarContainer = styled.aside`
           height: 50px;
           width: 25px;
           border-top-left-radius: 25px;
-          box-shadow: 0 -25px 0 0 ${({ theme }) => theme.colors.background.primary};
+          box-shadow: 0 -25px 0 0 ${({ theme }) => theme.colors.primary};
         }
 
         &::after {
@@ -63,7 +63,7 @@ export const SidebarContainer = styled.aside`
           width: 25px;
           border-bottom-left-radius: 25px;
           box-shadow: 0 25px 0 0
-            ${({ theme }) => theme.colors.background.primary};
+            ${({ theme }) => theme.colors.primary};
         }
       }
 

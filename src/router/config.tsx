@@ -1,4 +1,3 @@
-import withTour from "app/with-tour";
 import { lazy } from "react";
 
 const NotFoundPage = lazy(() => import("pages/not-found/not-found"));
@@ -32,7 +31,7 @@ const routes: routesProps[] = [
       type: "default",
       showFooter: false,
     },
-    component: withTour(LoginPage, "login"),
+    component:LoginPage,
   },
 ];
 

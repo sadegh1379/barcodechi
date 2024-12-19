@@ -37,8 +37,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: "yekan";
-    background-color: ${(props) => props.theme.colors.background.primary};
-    color: ${(props) => props.theme.colors.text.primary};
+    background-color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.black};
     direction: rtl;
   }
 
@@ -83,7 +83,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
       scrollbar-width: thin;
       scrollbar-color: ${({ theme }) =>
-        theme.colors.background.infoLight} #D9E3EF;
+        theme.colors.success} #D9E3EF;
     }
   }
 
@@ -94,7 +94,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.colors.background.infoLight};
+    background: ${({ theme }) => theme.colors.success};
     border-radius: 50px;
   }
 

@@ -42,14 +42,14 @@ export const SelectWithLogoInput: FC<ISelectProps> = ({
           control: (styles, { isDisabled }) => ({
             ...styles,
             backgroundColor: isDisabled
-              ? colors.background.secondary
-              : colors.background.primary,
+              ? colors.secondary
+              : colors.primary,
             borderRadius: "9px",
-            borderColor: colors.border.primary,
+            borderColor: colors.border,
             boxShadow: "none",
             padding: "8px 16px 8px 5px",
             ":hover": {
-              borderColor: colors.border.primary,
+              borderColor: colors.border,
             },
             "@media (max-width: 768px)": {
               padding: "5px 3px 4px 3px",
@@ -58,26 +58,26 @@ export const SelectWithLogoInput: FC<ISelectProps> = ({
           placeholder: (styles) => ({
             ...styles,
             fontSize: "12px",
-            color: colors.text.secondary,
+            color: colors.secondary,
           }),
           input: (styles) => ({
             ...styles,
-            color: colors.text.primary,
+            color: colors.primary,
             fontSize: "12px",
           }),
           singleValue: (styles) => ({
             ...styles,
-            color: colors.text.primary,
+            color: colors.primary,
           }),
           option: (styles) => ({
             ...styles,
             backgroundColor:
-              mode === "light" ? colors.background.primary : "#3a3a3c",
+              mode === "light" ? colors.primary : "#3a3a3c",
             marginTop: 1,
-            color: colors.text.primary,
+            color: colors.primary,
             cursor: "pointer",
             "&:hover": {
-              backgroundColor: colors.background.secondary,
+              backgroundColor: colors.secondary,
             },
           }),
           menu: (styles) => ({

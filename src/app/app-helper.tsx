@@ -18,10 +18,7 @@ interface RequireNoAuthProps {
   children: ReactNode;
 }
 
-interface RequireAccessProps {
-  children: ReactNode;
-  requiredRoles?: string[];
-}
+
 
 const RequireAuth: FC<RequireAuthProps> = ({ children }) => {
   const { token: userToken } = useSelector((state: RootState) => state.profile);
@@ -82,3 +79,4 @@ const RoutesLayoutHandler = ({
 };
 
 export { RequireAuth, RequireNoAuth, RoutesLayoutHandler };
+

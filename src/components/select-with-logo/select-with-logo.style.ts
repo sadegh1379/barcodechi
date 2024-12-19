@@ -32,7 +32,7 @@ export const SelectWithLogoContainer = styled.div`
   }
 
   .title {
-    color: ${(props) => props.theme.colors.text.primary};
+    color: ${(props) => props.theme.colors.primary};
     margin-bottom: 10px;
     font-size: 12px;
   }

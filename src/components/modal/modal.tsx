@@ -34,7 +34,7 @@ export const Modal: FC<IModalProps> = ({
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: colors.background.infoLight,
+            backgroundColor: colors.success,
             position: "relative",
           }}
         >

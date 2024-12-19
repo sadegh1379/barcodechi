@@ -1,6 +1,6 @@
 import { FC } from "react";
-import {IHelmetProps} from "./types"
 import { default as BHelmet } from "react-helmet";
+import { IHelmetProps } from "./types";
 
 
 export const Helmet: FC<IHelmetProps> = ({
@@ -8,7 +8,7 @@ export const Helmet: FC<IHelmetProps> = ({
 }) => {
   return (
       <BHelmet>
-        <title>سنجاب | {title}</title>
+        <title>بارکدچی | {title}</title>
       </BHelmet>
   );
 };

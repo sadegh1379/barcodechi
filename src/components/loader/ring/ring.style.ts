@@ -10,8 +10,8 @@ export const RingLoaderContainer = styled.div`
   .ring_loader {
     width: 52px;
     height: 52px;
-    border: 8px solid ${(props) => props.theme.colors.border.primary};
-    border-bottom-color: ${(props) => props.theme.colors.background.infoLight};
+    border: 8px solid ${(props) => props.theme.colors.border};
+    border-bottom-color: ${(props) => props.theme.colors.success};
     border-radius: 50%;
     display: inline-block;
     box-sizing: border-box;

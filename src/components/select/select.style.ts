@@ -14,7 +14,7 @@ export const SelectContainer = styled.div`
   }
 
   .title {
-    color: ${(props) => props.theme.colors.text.primary};
+    color: ${(props) => props.theme.colors.primary};
     margin-bottom: 10px;
     font-family: "yekan-bold";
     font-size: 14px;

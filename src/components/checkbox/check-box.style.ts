@@ -8,8 +8,8 @@ export const CheckBoxContainer = styled.div`
     gap: 8px;
 
     .form-check-input:checked {
-      background-color: ${(props) => props.theme.colors.background.infoDark};
-      border-color: ${(props) => props.theme.colors.background.infoDark};
+      background-color: ${(props) => props.theme.colors.secondary};
+      border-color: ${(props) => props.theme.colors.secondary};
     }
 
     input[type="checkbox"] {

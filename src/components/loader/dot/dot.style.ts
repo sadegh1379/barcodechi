@@ -9,7 +9,7 @@ export const DotLoaderContainer = styled.div`
 
   .dot {
     animation: dot-keyframes 1.5s infinite ease-in-out;
-    background-color: ${(props) => props.theme.colors.text.primary};
+    background-color: ${(props) => props.theme.colors.primary};
     border-radius: 10px;
     display: inline-block;
     height: 7px;

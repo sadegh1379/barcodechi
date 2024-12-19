@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FileUploaderContainer = styled.div`
   .title {
-    color: ${({ theme }) => theme.colors.text.primary};
+    color: ${({ theme }) => theme.colors.primary};
     margin-bottom: 10px;
     font-family: "yekan-bold";
     font-size: 14px;
@@ -11,23 +11,23 @@ export const FileUploaderContainer = styled.div`
   .uploader_container {
     padding: 14px;
     border-radius: ${({ theme }) => theme.sizes.border.r_8};
-    background: ${({ theme }) => theme.colors.background.primary};
-    border: 1px solid ${({ theme }) => theme.colors.border.primary};
+    background: ${({ theme }) => theme.colors.primary};
+    border: 1px solid ${({ theme }) => theme.colors.border};
     .drop_container {
       text-align: center;
-      border: 1px dashed ${({ theme }) => theme.colors.border.primary};
+      border: 1px dashed ${({ theme }) => theme.colors.border};
       padding: 32px 0;
       border-radius: ${({ theme }) => theme.sizes.border.r_8};
       .drop_title {
         font-size: 16px;
         font-weight: 700;
         line-height: 24px;
-        color: ${({ theme }) => theme.colors.text.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
       }
       .drop_sub_title {
         font-size: 10px;
         margin-top: 10px;
-        color: ${({ theme }) => theme.colors.text.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
       }
     }
 
@@ -46,7 +46,7 @@ export const FileUploaderContainer = styled.div`
         margin: 0;
         li {
           border-radius: ${({ theme }) => theme.sizes.border.r_8};
-          background-color: ${({ theme }) => theme.colors.background.secondary};
+          background-color: ${({ theme }) => theme.colors.secondary};
           padding: 10px 13px;
           display: flex;
           justify-content: flex-start;
@@ -58,7 +58,7 @@ export const FileUploaderContainer = styled.div`
             font-weight: 700;
             line-height: 19.5px;
             padding-top: 6px;
-            color: ${({ theme }) => theme.colors.text.primary};
+            color: ${({ theme }) => theme.colors.primary};
 
             &:hover {
               text-decoration: underline;

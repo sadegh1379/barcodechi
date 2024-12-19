@@ -1,40 +1,13 @@
-interface IBgColorVariants {
+interface IColorVariants {
   primary: string;
   primaryReverse: string;
   secondary: string;
   gray: string;
-  errorLight: string;
-  successLight: string;
-  infoLight: string;
-  InfoLight2: string;
-  info: string;
-  warningLight: string;
-  errorDark: string;
-  successDark: string;
-  infoDark: string;
-  InfoDark2: string;
-  warningDark: string;
-}
-
-interface ITextColorVariants {
-  primary: string;
-  primaryReverse: string;
-  secondary: string;
-  errorLight: string;
-  successLight: string;
-  infoLight: string;
-  InfoLight2: string;
-  info: string;
-  warningLight: string;
-  errorDark: string;
-  successDark: string;
-  infoDark: string;
-  InfoDark2: string;
-  warningDark: string;
-}
-
-interface IBorderSizeVariants {
-  primary: string;
+  success: string;
+  danger: string;
+  orange: string;
+  black: string;
+  border: string;
 }
 
 interface IShadowVariants {
@@ -45,12 +18,8 @@ interface IShadowVariants {
 
 type ThemeOb = {
   mode: string;
-  colors: {
-    shadow: IShadowVariants;
-    text: ITextColorVariants;
-    background: IBgColorVariants;
-    border: IBorderSizeVariants;
-  };
+  shadow: IShadowVariants;
+  colors: IColorVariants;
 };
 
 interface Theme {
@@ -68,4 +37,6 @@ interface IGlobalTheme extends ThemeVariant {
   mode: "dark" | "light";
 }
 
+
 export type { IGlobalTheme, Theme, ThemeProps };
+

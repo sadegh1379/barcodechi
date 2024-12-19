@@ -4,7 +4,7 @@ export const InputContainer = styled.div`
   width: 100%;
   min-width: 60px;
   .title {
-    color: ${({ theme }) => theme.colors.text.primary};
+    color: ${({ theme }) => theme.colors.primary};
     margin-bottom: 10px;
     font-family: "yekan-bold";
     font-size: 14px;
@@ -15,10 +15,10 @@ export const InputContainer = styled.div`
     .input {
       width: 100%;
       min-width: 60px;
-      background-color: ${({ theme }) => theme.colors.background.primary};
-      color: ${({ theme }) => theme.colors.text.primary};
+      background-color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.primary};
       border-radius: 9px;
-      border: 1px solid ${({ theme }) => theme.colors.border.primary};
+      border: 1px solid ${({ theme }) => theme.colors.border};
       font-size: 17px;
       padding: 15px 16px 14px 16px;
       text-align: right;
@@ -32,20 +32,20 @@ export const InputContainer = styled.div`
       }
 
       &::placeholder {
-        color: ${({ theme }) => theme.colors.text.secondary};
+        color: ${({ theme }) => theme.colors.secondary};
         font-size: 12px;
         font-weight: 500;
         line-height: 18px;
       }
       &:disabled {
-        background-color: ${({ theme }) => theme.colors.background.secondary};
+        background-color: ${({ theme }) => theme.colors.secondary};
       }
     }
 
     .left_icon {
       position: absolute;
-      border-right: 1px solid ${({ theme }) => theme.colors.border.primary};
-      color: ${({ theme }) => theme.colors.border.primary};
+      border-right: 1px solid ${({ theme }) => theme.colors.border};
+      color: ${({ theme }) => theme.colors.border};
       bottom: 16px;
       left: 15px;
       padding-right: 8px;
