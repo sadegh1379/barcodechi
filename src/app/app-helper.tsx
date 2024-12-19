@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import { routesProps } from "router/config";
 import { changeToken } from "state-manager/reducer/profile";
 import { RootState } from "state-manager/store";
-import { CoreAdminLayout, DefaultLayout } from "../layout";
+import { CoreAdminLayout, DefaultLayout, MobileLayout } from "../layout";
 
 interface RequireAuthProps {
   children: ReactNode;
@@ -73,6 +73,9 @@ const RoutesLayoutHandler = ({
       );
     case "core-admin":
       return <CoreAdminLayout>{children}</CoreAdminLayout>;
+    
+    case "mobile": 
+      return <MobileLayout>{ children}</MobileLayout>
     default:
       return null;
   }

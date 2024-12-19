@@ -7,7 +7,7 @@ export type routesProps = {
   path: string;
   component: React.FC;
   layout: {
-    type: "default" | "core-admin";
+    type: "default" | "core-admin" | "mobile";
     showFooter?: boolean;
   };
   authType: "no-auth" | "auth";
@@ -28,7 +28,7 @@ const routes: routesProps[] = [
     path: "/login",
     authType: "no-auth",
     layout: {
-      type: "default",
+      type: "mobile",
       showFooter: false,
     },
     component:LoginPage,
