@@ -7,13 +7,13 @@ export const CategoriesContainer = styled.div`
     margin-top: 20px;
     gap: 10px;
     
-    .categories{
+    .categories {
         display: flex;
         align-items: center;
         gap: 10px;
         overflow-x: scroll;
 
-        .category{
+        .category {
             width: 100px;
             display: flex;
             align-items: center;
@@ -21,12 +21,11 @@ export const CategoriesContainer = styled.div`
             border-radius: 20px;
             padding: 5px 10px;
             padding-top: 10px;
-            &.active{
+            
+            &.active {
                 background-color: ${({ theme }) => theme.colors.gray};
                 color: white;
-                
             }
         }
     }
-
 `;

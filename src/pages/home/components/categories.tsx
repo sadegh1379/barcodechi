@@ -13,7 +13,7 @@ const Categories: FC<CategoriesContainerProps> = ({ activeCategory, categoryChan
 
     return (
         <CategoriesContainer>
-            <div className="categories">
+            <div className="categories hide_horizontal_scrollbar">
                 {CATEGORIES.map((category) => (
                     <div onClick={() => categoryChangeHandler(category)} key={category} className={`category ${activeCategory === category && "active"}`}>
                         {category}

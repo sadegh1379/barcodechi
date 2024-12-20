@@ -91,6 +91,15 @@ export const GlobalStyle = createGlobalStyle`
   .pointer{
     cursor: pointer;
   }
+
+  .hide_horizontal_scrollbar::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .hide_horizontal_scrollbar{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
  
 
   /* css animations */
