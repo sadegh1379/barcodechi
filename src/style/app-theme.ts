@@ -9,6 +9,7 @@ export const appTheme: Theme = {
       lg: "0 0 45px -1px rgba(0, 0, 0, 0.3)",
     },
     colors: {
+        white: "#fff",
         primary: "#fefefe",
         primaryReverse: "#000000",
         secondary: "#e8e7ed",
@@ -29,6 +30,7 @@ export const appTheme: Theme = {
       lg: "0 0 45px -1px rgba(0, 0, 0, 0.3)",
     },
     colors: {
+      white: "#fff",
         primary: "#fefefe",
         primaryReverse: "#000000",
         secondary: "#e8e7ed",

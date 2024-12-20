@@ -1,4 +1,5 @@
 interface IColorVariants {
+  white: string;
   primary: string;
   primaryReverse: string;
   secondary: string;

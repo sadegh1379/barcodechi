@@ -14,7 +14,7 @@ const Router: React.FC = () => {
     <Suspense fallback={<PageLoader />}>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
         {routes.map((routeItem, index) => {
           if (routeItem.authType === "auth") {
             return (
